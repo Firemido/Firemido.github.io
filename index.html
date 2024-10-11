@@ -1,28 +1,185 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Mohamed Hazem's Portfolio</title>
-       <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-       <header>
-           <h1>Welcome to My Portfolio</h1>
-       </header>
-       <section>
-           <h2>About Me</h2>
-           <p>Hi, I'm Mohamed Hazem, a software developer...</p>
-       </section>
-       <section>
-           <h2>Projects</h2>
-           <ul>
-               <li><a href="https://github.com/username/project1">Project 1</a></li>
-               <li><a href="https://github.com/username/project2">Project 2</a></li>
-           </ul>
-       </section>
-       <footer>
-           <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
-       </footer>
-   </body>
-   </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hazem's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      description="Hazem's personal portfolio website showcasing skills and projects." />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/b64dcdf13d.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="#">Hazem</a></h1>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+      <div class="container">
+        <h2>Hello, I'm Hazem</h2>
+        <p>A passionate [Your Profession]</p>
+        <a href="YourResumeLink.pdf" class="btn">Download Resume</a>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>[Your bio goes here]</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- Skill Item -->
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+          </div>
+          <!-- Add more skill items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <!-- Project Filters -->
+        <div id="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="app">App Development</button>
+          <!-- Add more filters as needed -->
+        </div>
+        <!-- Project Gallery -->
+        <div class="projects-grid">
+          <!-- Project Item -->
+          <div class="project-item" data-category="web">
+            <img src="images/project1.jpg" alt="Project 1" />
+            <h3>Project Title</h3>
+            <p>Short description of the project.</p>
+            <a
+              href="https://github.com/yourusername/project1"
+              class="btn"
+              target="_blank"
+              >View on GitHub</a
+            >
+          </div>
+          <!-- Add more project items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <!-- Timeline Event -->
+          <div class="timeline-event">
+            <h3>Job Title at Company</h3>
+            <span>January 2020 - Present</span>
+            <p>Describe your responsibilities and achievements.</p>
+          </div>
+          <!-- Add more timeline events as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <!-- Timeline Event -->
+          <div class="timeline-event">
+            <h3>Degree at Institution</h3>
+            <span>September 2016 - June 2020</span>
+            <p>Details about your studies.</p>
+          </div>
+          <!-- Add more timeline events as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="form-message"></div>
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/yourusername" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <!-- Add more social icons as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Hazem. All rights reserved.</p>
+        <!-- Visitor Counter Image (Optional) -->
+        <!-- <img src="https://visitor-badge.glitch.me/badge?page_id=HazemRepo.visitor-badge" alt="Visitor Counter"> -->
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
