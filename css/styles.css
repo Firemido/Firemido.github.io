@@ -317,9 +317,15 @@ footer p {
 }
 
 #skills-isolated * {
+    box-sizing: border-box;
+}
+
+/* Remove the following line:
+#skills-isolated * {
     all: unset;
     box-sizing: border-box;
 }
+*/
 
 #skills-isolated .skills-section-wrapper {
     max-width: 1200px;
@@ -386,7 +392,6 @@ footer p {
     font-size: 1.1em;
     color: #34495e;
 }
-
 
 .icon-image {
     width: 100px;
