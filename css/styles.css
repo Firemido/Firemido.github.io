@@ -309,23 +309,14 @@ footer p {
     margin: 0;
 }
 
-
 #skills-isolated {
-    all: initial;
-    display: block;
     font-family: Arial, sans-serif;
+    display: block;
 }
 
 #skills-isolated * {
     box-sizing: border-box;
 }
-
-/* Remove the following line:
-#skills-isolated * {
-    all: unset;
-    box-sizing: border-box;
-}
-*/
 
 #skills-isolated .skills-section-wrapper {
     max-width: 1200px;
@@ -393,6 +384,23 @@ footer p {
     color: #34495e;
 }
 
+/* Add these new rules for Font Awesome icons */
+#skills-isolated .skill-icon.fab,
+#skills-isolated .skill-icon.fas {
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#skills-isolated .skill-icon.fab::before,
+#skills-isolated .skill-icon.fas::before {
+    display: inline-block;
+}
 .icon-image {
     width: 100px;
     /* Set the width of the image */
