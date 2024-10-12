@@ -386,3 +386,68 @@ footer p {
     font-size: 1.1em;
     color: #34495e;
 }
+
+
+.icon-image {
+    width: 100px;
+    /* Set the width of the image */
+    height: 100px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Make the image round */
+    object-fit: cover;
+    /* Ensure the image covers the entire area */
+}
+
+
+/* Experience Section Styles */
+#experience {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#experience .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.timeline-event {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-event h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.5em;
+}
+
+.timeline-event span {
+    display: block;
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.timeline-event p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 10px;
+}

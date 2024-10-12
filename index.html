@@ -13,7 +13,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/b64dcdf13d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-2h5GHw6unXVP0/xE0vyfO3YYZOuqV9OJ0ZwJwRodyDcZx6Vp8CtMSPuZrhTtJ6hQh7dZN3hVrz3DkE4ZURwB5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -132,16 +134,33 @@
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="web">Web Development</button>
         <button class="filter-btn" data-filter="app">App Development</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+
         <!-- Add more filters as needed -->
       </div>
       <!-- Project Gallery -->
       <div class="projects-grid">
         <!-- Project Item -->
         <div class="project-item" data-category="web">
-          <img src="images/project1.jpg" alt="Project 1" />
-          <h3>Project Title</h3>
-          <p>Short description of the project.</p>
-          <a href="https://github.com/yourusername/project1" class="btn" target="_blank">View on GitHub</a>
+          <img src="images/iHealthyCalculator.jpg" alt="Project 1" class="icon-image" />
+          <h3>Intake Meassuring tool</h3>
+          <p>in short talk, A calculator that can be used to meassure all intake , supported with Ai </p>
+          <a href="https://ihealthy-calculator.web.app/" class="btn" target="_blank">Open</a>
+        </div>
+
+        <div class="project-item" data-category="game">
+          <img src="images/snakeGame.png" alt="Project 2" class="icon-image" />
+          <h3>SnakeLeague</h3>
+          <p>snake game with new Mechansim on global leaderBoard ,based on League of Legends characteristics.</p>
+          <a href="https://snake-league.web.app/" class="btn" target="_blank">Open</a>
+        </div>
+
+
+        <div class="project-item" data-category="game">
+          <img src="images/snakeAi.jpg" alt="Project 3" class="icon-image" />
+          <h3>AiSnake</h3>
+          <p>Have a new experience where the food are trying to hide from you.</p>
+          <a href="https://firemido.itch.io/snakemaze" class="btn" target="_blank">Open</a>
         </div>
         <!-- Add more project items as needed -->
       </div>
@@ -155,15 +174,44 @@
       <div class="timeline">
         <!-- Timeline Event -->
         <div class="timeline-event">
-          <h3>Job Title at Company</h3>
-          <span>January 2020 - Present</span>
-          <p>Describe your responsibilities and achievements.</p>
+          <h3>Software Developer at IdealRatings</h3>
+          <span>January 2022 - Present</span>
+          <p>
+            <strong>Project: Live4</strong><br>
+            Played a pivotal role in maintaining and enhancing Live4, the company's flagship product. Responsibilities
+            included:
+          <ul>
+            <li><strong>Bug Fixing and System Reliability</strong>: Diagnosed and resolved software bugs to ensure
+              optimal
+              performance and user satisfaction.</li>
+            <li><strong>Feature Development</strong>: Designed and implemented new features based on client feedback and
+              industry
+              trends to enhance product functionality.</li>
+            <li><strong>Algorithm Optimization</strong>: Modified existing calculation algorithms to improve accuracy
+              and
+              efficiency, aligning them with updated business requirements.</li>
+            <li><strong>Performance Enhancement</strong>: Optimized system processes, resulting in reduced processing
+              times and
+              improved scalability.</li>
+          </ul>
+          Collaborated closely with cross-functional teams to align technical solutions with business objectives,
+          contributing to
+          an improved user experience.
+          </p>
+          <p>
+            <strong>Project: Scrapper</strong><br>
+            Developed an advanced web scraping tool to automatically collect specific company documents from the
+            internet. The
+            application focused on retrieving PDFs for example (ESG) Environmental, Social, and Governance data,
+            facilitating the
+            analysis of companies based on criteria like carbon emission levels below certain thresholds etc..
+          </p>
         </div>
+
         <!-- Add more timeline events as needed -->
       </div>
     </div>
   </section>
-
   <!-- Education Section -->
   <section id="education">
     <div class="container">
@@ -171,9 +219,9 @@
       <div class="timeline">
         <!-- Timeline Event -->
         <div class="timeline-event">
-          <h3>Degree at Institution</h3>
-          <span>September 2016 - June 2020</span>
-          <p>Details about your studies.</p>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <span>Arab Academy for Science, Technology and Maritime Transport (AASTMT)</span>
+          <span>September 2018 - June 2022</span>
         </div>
         <!-- Add more timeline events as needed -->
       </div>
@@ -205,11 +253,7 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2023 Hazem. All rights reserved.</p>
-      <!-- Visitor Counter Image (Optional) -->
-      <!-- <img src="https://visitor-badge.glitch.me/badge?page_id=HazemRepo.visitor-badge" alt="Visitor Counter"> -->
-    </div>
+
   </footer>
 
   <!-- JavaScript -->
