@@ -386,15 +386,3 @@ footer p {
     font-size: 1.1em;
     color: #34495e;
 }
-
-
-.icon-image {
-    width: 100px;
-    /* Set the width of the image */
-    height: 100px;
-    /* Set the height of the image */
-    border-radius: 50%;
-    /* Make the image round */
-    object-fit: cover;
-    /* Ensure the image covers the entire area */
-}
